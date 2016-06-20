@@ -1,8 +1,5 @@
 
-<?python
-from plone import api
-portal = api.portal.get()
-?>
+<tal:portal define="portal view/portal">
 
 <link rel="stylesheet" tal:attributes="href string:${portal/absolute_url}/++resource++mingtak.gallery/colorbox-master/example1/colorbox.css" />
 <script tal:attributes="src string:${portal/absolute_url}/++resource++mingtak.gallery/colorbox-master/jquery.colorbox.js"></script>
@@ -56,3 +53,4 @@ portal = api.portal.get()
     <img tal:attributes="src string:${portal/absolute_url}/++resource++mingtak.gallery/colorbox-master/content/ohoopee3.jpg" style="width:150px" />
   </a>
 
+</tal:portal>

@@ -1,8 +1,4 @@
-
-<?python
-from plone import api
-portal = api.portal.get()
-?>
+<tal:portal define="portal view/portal">
 
 
 <link rel="stylesheet" tal:attributes="href string:${portal/absolute_url}/++resource++mingtak.gallery/PgwSlideshow/pgwslideshow.min.css" />
@@ -34,3 +30,6 @@ $(document).ready(function() {
     $('.pgwSlideshow').pgwSlideshow();
 });
 </script>
+
+
+</tal:portal>
