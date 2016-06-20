@@ -1,0 +1,25 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:browser="http://namespaces.zope.org/browser"
+    xmlns:plone="http://namespaces.plone.org/plone"
+    i18n_domain="mingtak.gallery">
+
+    <browser:viewlet
+      name="gallery"
+      for="plone.app.contenttypes.interfaces.IDocument"
+      manager="plone.app.layout.viewlets.interfaces.IBelowContentBody"
+      template="template/gallery.pt"
+      class=".viewlet.Gallery"
+      permission="zope2.View"
+    />
+
+    <browser:viewlet
+      name="carousel"
+      for="plone.app.contenttypes.interfaces.INewsItem"
+      manager="plone.app.layout.viewlets.interfaces.IBelowContentBody"
+      template="template/carousel.pt"
+      class=".viewlet.Carousel"
+      permission="zope2.View"
+    />
+
+</configure>

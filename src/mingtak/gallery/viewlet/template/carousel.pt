@@ -1,0 +1,36 @@
+
+<?python
+from plone import api
+portal = api.portal.get()
+?>
+
+
+<link rel="stylesheet" tal:attributes="href string:${portal/absolute_url}/++resource++mingtak.gallery/PgwSlideshow/pgwslideshow.min.css" />
+<script tal:attributes="src string:${portal/absolute_url}/++resource++mingtak.gallery/PgwSlideshow/pgwslideshow.js"></script>
+
+
+
+
+<ul class="pgwSlideshow">
+    <li>
+      <img tal:attributes="src string:${portal/absolute_url}/++resource++mingtak.gallery/colorbox-master/content/ohoopee1.jpg"
+           alt="San Francisco, USA" data-description="Golden Gate Bridge">
+    </li>
+    <li>
+      <img tal:attributes="src string:${portal/absolute_url}/++resource++mingtak.gallery/colorbox-master/content/ohoopee2.jpg"
+           alt="Rio de Janeiro, Brazil">
+    </li>
+    <li>
+      <img tal:attributes="src string:${portal/absolute_url}/++resource++mingtak.gallery/colorbox-master/content/ohoopee3.jpg" alt="">
+    </li>
+</ul>
+
+
+
+
+
+<script>
+$(document).ready(function() {
+    $('.pgwSlideshow').pgwSlideshow();
+});
+</script>

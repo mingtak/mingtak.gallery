@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<layers>
+  <layer
+      name="mingtak.gallery"
+      interface="mingtak.gallery.interfaces.IMingtakGalleryLayer"
+      />
+</layers>
