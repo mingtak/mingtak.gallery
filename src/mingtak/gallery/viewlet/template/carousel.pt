@@ -1,4 +1,4 @@
-<tal:portal define="portal view/portal">
+<tal:portal define="portal view/portal" condition="python:context.id == 'slide-demo'">
 
 
 <link rel="stylesheet" tal:attributes="href string:${portal/absolute_url}/++resource++mingtak.gallery/PgwSlideshow/pgwslideshow.min.css" />
@@ -9,15 +9,15 @@
 
 <ul class="pgwSlideshow">
     <li>
-      <img tal:attributes="src string:${portal/absolute_url}/++resource++mingtak.gallery/colorbox-master/content/ohoopee1.jpg"
+      <img tal:attributes="src string:${portal/absolute_url}/++resource++mingtak.gallery/large1.jpg"
            alt="San Francisco, USA" data-description="Golden Gate Bridge">
     </li>
     <li>
-      <img tal:attributes="src string:${portal/absolute_url}/++resource++mingtak.gallery/colorbox-master/content/ohoopee2.jpg"
+      <img tal:attributes="src string:${portal/absolute_url}/++resource++mingtak.gallery/large2.jpg"
            alt="Rio de Janeiro, Brazil">
     </li>
     <li>
-      <img tal:attributes="src string:${portal/absolute_url}/++resource++mingtak.gallery/colorbox-master/content/ohoopee3.jpg" alt="">
+      <img tal:attributes="src string:${portal/absolute_url}/++resource++mingtak.gallery/large3.jpg" alt="">
     </li>
 </ul>
 
